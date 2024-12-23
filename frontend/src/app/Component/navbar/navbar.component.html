@@ -3,8 +3,8 @@
     class="px-4 md:px-14 py-1 md:py-3 flex text-xs md:text-base font-normal items-center justify-between sticky top-0 bg-white z-20 drop-shadow-xl">
     <div class="flex gap-2 md:gap-16 items-center w-full justify-between md:w-auto md:justify-start">
         <div class="grid place-content-center">
-            <img class="md:w-[4.5rem] md:h-auto w-12 h-10"
-                src="../../../assets/red-bus-with-word-bus-it_600323-482.avif" alt="Tedbus Logo"
+            <img class="md:w-[4.5rem] md:h-auto w-12 h-10 cursor-pointer" 
+                src="../../../assets/red-bus-with-word-bus-it_600323-482.avif" alt="Tedbus Logo" (click)="navigate('/')" 
                 >
         </div>
         <div class="h-6 w-[1px] bg-gray-200"></div>
@@ -88,8 +88,5 @@
             <button mat-menu-item (click)="handlelogout()">Sign Out</button>
           </mat-menu>
     </div>
-
-
-
 
 </nav>

@@ -14,12 +14,11 @@ export class BottomTabComponent {
 @Input() operatorname: string=''
 @Input() busid:string=''
 
-tabstate:boolean[]=[false,false,false,false,false]
+tabstate:boolean[]=[false,false,false,false,false,false]
 
 handletabstate(value:number):void{
   for(let i=0;i<this.tabstate.length;i++){
     this.tabstate[i]=(i===value && !this.tabstate[i])
   }
 }
-
 }

@@ -1,0 +1,49 @@
+/* review.component.css */
+
+.review-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .review-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .stars {
+    display: inline-flex;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #d3d3d3;
+    transition: color 0.3s ease;
+  }
+  
+  .star.filled {
+    color: #f5c518;
+  }
+  
+  .star:hover {
+    color: #ffa500;
+  }
+  
+  .star:hover ~ .star {
+    color: #d3d3d3; /* Keeps stars to the right unfilled on hover */
+  }
+  
+  .review-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  

@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './bus-box.component.css'
 })
 export class BusBoxComponent {
-@Input() rating:number[]=[];
+@Input() avgrating:number=0;
 @Input() operatorname:string=''
 @Input() bustype:string=''
 @Input() departuretime:string=""
@@ -15,7 +15,7 @@ export class BusBoxComponent {
 @Input() filledseats:any[]=[]
 @Input() routedetails: any
 @Input() busid:string=''
-avgrating:number=0
+// avgrating:number=0
 totalreview:number=0
 seatprivce:number=0
 bustypename:string=''
@@ -23,14 +23,14 @@ busdeparturetime:number=0;
 busarrivaltime:number=0
 constructor(){}
 ngOnInit(): void{
-  this.rating.forEach((item,index)=> {
-    this.avgrating+=  item;
-    this.totalreview += index;
-  });
-  if(this.totalreview==0){
-    this.totalreview=1
-  }
-  this.avgrating=+this.avgrating/this.totalreview
+  // this.rating.forEach((item,index)=> {
+  //   this.avgrating+=  item;
+  //   this.totalreview += index;
+  // });
+  // if(this.totalreview==0){
+  //   this.totalreview=1
+  // }
+  // this.avgrating=+this.avgrating/this.totalreview
   // console.log(this.routedetails)
   if(this.bustype ==='standard'){
     this.seatprivce=50 * Math.floor(this.routedetails.duration) /2;

@@ -33,6 +33,8 @@ import { PaymentPageComponent } from './Component/payment-page/payment-page.comp
 import { ProfilePageComponent } from './Component/profile-page/profile-page.component';
 import { MyTripComponent } from './Component/profile-page/my-trip/my-trip.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReviewsComponent } from './Component/selectbus-page/right/reviews/reviews.component';
+import { BusPhotosComponent } from './Component/selectbus-page/right/bus-photos/bus-photos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,9 @@ import { HttpClientModule } from '@angular/common/http';
     BusBookingFormComponent,
     PaymentPageComponent,
     ProfilePageComponent,
-    MyTripComponent
+    MyTripComponent,
+    ReviewsComponent,
+    BusPhotosComponent
   ],
   imports: [
     BrowserModule,

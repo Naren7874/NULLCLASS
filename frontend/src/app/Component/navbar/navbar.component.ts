@@ -20,11 +20,10 @@ ngOnInit(): void {
 
 
   google.accounts.id.initialize({
-    client_id:"129421237209-jricn8ed4fgld4glk6k716deq5ebsmpb.apps.googleusercontent.com",
+    client_id:"312672137912-e9rr7qiv2cj9q86pt9iq8hddv11d4khh.apps.googleusercontent.com",
     callback:(response:any)=>{this.handlelogin(response);
-
     }
-  })
+  }) 
 }
 ngAfterViewInit():void{
   this.rendergooglebutton();

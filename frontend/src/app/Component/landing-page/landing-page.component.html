@@ -47,11 +47,8 @@
                     <div class="px-7 py-8 flex items-center h-full gap-3 group relative pr-12">
 
                         <i class="fa-solid fa-calendar-days text-gray-500 text-2xl"></i>
-                        <input matInput class="outline-none opacity-0 scale-[3] h-14 w-[30px] absolute left-14 z-10"
-                            placeholder="Date" [matDatepicker]="picker" (click)="picker.open()"
-                            (dateChange)="matchDate($event)">
-                        <p class="text-gray-400">Date</p>
-                        <mat-datepicker #picker></mat-datepicker>
+                        <input class="outline-none" type="text" placeholder="Date" [matDatepicker]="picker" (click)="picker.open()" (dateChange)="matchDate($event)">
+                <mat-datepicker #picker></mat-datepicker>
                         <!-- <p class="text-gray-400">Date</p> -->
                     </div>
                 </div>

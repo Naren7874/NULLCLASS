@@ -1,0 +1,14 @@
+<div *ngFor="let bus of buses">
+  <h3>{{ bus.operatorName }}</h3>
+  <div class="stars">
+    <span
+      *ngFor="let star of stars"
+      class="star"
+      [class.filled]="star <= currentRating"
+      (click)="rateBus(bus._id, star)"
+    >
+      ★
+    </span>
+  </div>
+  <p>Average Rating: {{ bus.averageRating || 'No Ratings Yet' }}</p>
+</div>

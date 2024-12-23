@@ -36,5 +36,5 @@ exports.getoneroute = async(req,res) => {
     busidwithseatobj[matchedbuses[i]._id.toString()]=currentbusseats;
     }
     res.send({route:route,matchedBuses:matchedbuses,busidwithseatobj})
-
+    
 };
